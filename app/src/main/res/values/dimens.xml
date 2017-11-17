@@ -1,0 +1,50 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="activity_left_pading">10dp</dimen>
+    <dimen name="activity_right_pading">10dp</dimen>
+    <dimen name="activity_top_pading">16dp</dimen>
+    <dimen name="activity_bottom_pading">16dp</dimen>
+
+
+    <dimen name="activity_left_margin">10dp</dimen>
+    <dimen name="activity_right_margin">10dp</dimen>
+    <dimen name="activity_top_margin">10dp</dimen>
+    <dimen name="activity_bottom_margin">10dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="topbar_size">45dp</dimen>
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="ui_5_dp">50dip</dimen>
+    <dimen name="slidingmenu_offset">100dp</dimen>
+    <dimen name="msg_item_height">62dp</dimen>
+    <dimen name="grid_expected_size">120dp</dimen>
+    <dimen name="item_margin_horizontal">24dp</dimen>
+    <dimen name="item_margin_vertical">8dp</dimen>
+
+
+    <dimen name="text_size14">14sp</dimen>
+    <dimen name="text_size15">15sp</dimen>
+    <dimen name="text_size16">16sp</dimen>
+    <dimen name="text_size18">18sp</dimen>
+    <dimen name="text_size20">20sp</dimen>
+    <dimen name="text_size22">22sp</dimen>
+    <dimen name="text_size23">23sp</dimen>
+    <dimen name="text_size24">24sp</dimen>
+    <dimen name="text_size26">26sp</dimen>
+    <dimen name="text_size28">28sp</dimen>
+    <dimen name="text_size30">30sp</dimen>
+
+
+    <!-- Default Parallax ImageView Height  -->
+    <dimen name="size_default_height">220dp</dimen>
+
+    <dimen name="POSMAIN_TOP_HEIGHT">40dp</dimen>
+
+    <dimen name="tab_top_fontsize">16sp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="def_height">80dp</dimen>
+
+</resources>

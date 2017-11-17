@@ -30,6 +30,7 @@ public class MainActivity extends Activity {
     private static HomeWatcherReceiver mHomeKeyReceiver = null;
 
     GridView appsGrid;
+    TypeAdapter typeAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,13 +39,14 @@ public class MainActivity extends Activity {
         appsGrid = (GridView) findViewById(R.id.apps_list);
 
         appsGrid.setOnItemClickListener(clickListener);
+
+        registerHomeKeyReceiver(this);
     }
 
 
     @Override
     protected void onResume() {
         super.onResume();
-        registerHomeKeyReceiver(this);
         loadApps();
     }
 
@@ -95,10 +97,8 @@ public class MainActivity extends Activity {
 
     List<Drawable> types = new ArrayList<Drawable>();
     List<String> strArr=new ArrayList<String>();
-    List<PackageInfo> packages;
-    List<PackageInfo> appPackages=new ArrayList<PackageInfo>(
-
-    );
+    List<PackageInfo> packages=new ArrayList<PackageInfo>();
+    List<PackageInfo> appPackages=new ArrayList<PackageInfo>();
     //    private List<ResolveInfo> apps;
 //    ResolveInfo info;
     private void loadApps() {
@@ -107,6 +107,8 @@ public class MainActivity extends Activity {
 
         types.clear();
         strArr.clear();
+        packages.clear();
+        appPackages.clear();
 
 //        apps = getPackageManager().queryIntentActivities(mainIntent, 0);
 
@@ -122,13 +124,14 @@ public class MainActivity extends Activity {
             }
         }
 
-//
 //        for (int i=0;i<apps.size();i++){
 //            info= apps.get(i);
 //            types.add(info.activityInfo.loadIcon(getPackageManager()));
 //        }
-
-        appsGrid.setAdapter(new TypeAdapter(types,this,strArr,1));
+        typeAdapter=new TypeAdapter(types,this,strArr,1);
+        typeAdapter.notifyDataSetChanged();
+        appsGrid.setAdapter(typeAdapter);
+        appsGrid.setOnItemClickListener(clickListener);
     }
 
     /*

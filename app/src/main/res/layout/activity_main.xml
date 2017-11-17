@@ -12,7 +12,7 @@
        android:padding="10dp"
        android:drawableLeft="@mipmap/ic_launcher"
        android:drawablePadding="10dp"
-       android:text="友禾出品，必属精品"
+       android:text="友达天下，禾秀于风"
        android:textColor="#FFFFFF"
        android:gravity="center_vertical"
        />
@@ -33,6 +33,7 @@
        android:numColumns="3"
        android:scrollbars="none"
        android:layout_marginTop="20dp"
+       android:gravity="center"
        />
 
 

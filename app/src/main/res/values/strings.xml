@@ -1,3 +1,22 @@
 <resources>
-    <string name="app_name">MyLauncherApplication</string>
+    <string name="app_name">LauncherApplication</string>
+
+
+    <string name="NumberKey0">0</string>
+    <string name="NumberKey00">00</string>
+    <string name="NumberKey1">1</string>
+    <string name="NumberKey2">2</string>
+    <string name="NumberKey3">3</string>
+    <string name="NumberKey4">4</string>
+    <string name="NumberKey5">5</string>
+    <string name="NumberKey6">6</string>
+    <string name="NumberKey7">7</string>
+    <string name="NumberKey8">8</string>
+    <string name="NumberKey9">9</string>
+    <string name="NumberKeyDot">.</string>
+
+    <string name="tvTotalAmtTemplate">00</string>
+    <string name="SPACE">　</string>
+    <string name="OK">确定</string>
+
 </resources>
